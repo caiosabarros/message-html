@@ -1,8 +1,10 @@
 // Load environment variables.
+
+//browser doesnt recognize 'require'
 //require("dotenv").config();
 
-ACCOUNT_MNEMONIC="spatial rival desert since spend monitor dose brain today creek ranch time"
-RINKEBY_ENDPOINT="https://rinkeby.infura.io/v3/afb21d6976ad4b7fa5c283595023a53f"
+ACCOUNT_MNEMONIC="";
+RINKEBY_ENDPOINT="";
 
 //const HDWalletProvider = require("@truffle/hdwallet-provider");
 import HDWalletProvider from './node_modules/@truffle/hdwallet-provider';
