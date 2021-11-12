@@ -1,3 +1,5 @@
+//File used to deploy and interact with Rinkeby on html
+
 // Load environment variables.
 
 //browser doesnt recognize 'require'
