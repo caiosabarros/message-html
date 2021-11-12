@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html >
+  <head>
+    <title>Set and Retrieve Message</title>
+
+    <link href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css' rel='stylesheet' type='text/css'>
+    <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js"></script>
+    <script src="./node_modules/web3/dist/web3.min.js"></script>
+    <script src="./deploy.js" type="module"></script>    
+  </head>
+
+  <body class="container">
+
+    <h1 class="page-header">Set and Retrieve a Message on the Blockchain</h1>
+
+    <div class="row">
+      <div>
+        <h3 class="sub-header">Set message</h3>
+        <form class="form-inline" role="form">
+          <div class="form-group">
+            <table>
+              <tr>
+                <td><label for="newInfo">Your Message:</label> </td>
+                <td>
+                  <input class="form-control" placeholder="write your message" id="newInfo">
+                </td>                          
+              </tr>
+            </table>
+          </div>
+          <a href="#" onclick="inboxSetMessage()" class="btn btn-primary">Set New Message</a>
+        </form>
+      </div>
+    </div>    
+
+    <div class="row">
+      <div>
+        <h3 class="sub-header">Get last message saved</h3>
+        <form class="form-inline" role="form">
+          <a href="#" onclick="inboxGetMessage()" class="btn btn-primary">Get</a>
+          <div class="form-group">
+            <table>
+              <tr>
+                <td>Message:</td>
+                <td>
+                  <label id="lastInfo">
+                </td>                          
+              </tr>
+            </table>
+          </div>                
+        </form>
+      </div>
+    </div>
+
+  </body>
+</html>

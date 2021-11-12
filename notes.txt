@@ -1,0 +1,6 @@
+Mocha:
+Add "mocha" to the package.json file under the test under the scripts.
+Then on the terminal, just run npm run test
+
+Questions - 49
+What is a promise returned by an asynchronous function?
